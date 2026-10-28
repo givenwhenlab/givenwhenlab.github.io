@@ -221,7 +221,10 @@ function ProjectsSection({ language }: { language: Language }) {
           <article className="project-item" key={project.name}>
             <div className="project-index">0{projects.indexOf(project) + 1}</div>
             <div className="project-body"><p className="eyebrow">{project.type}</p><h3>{project.name}</h3><p>{project.description}</p></div>
-            <a className="project-link" href={project.url} target="_blank" rel="noreferrer">{text.open} <Arrow /></a>
+            <div className="project-actions">
+              <a className="project-link" href={project.url} target="_blank" rel="noreferrer">{text.open} <Arrow /></a>
+              {project.paper && <a className="project-link" href={project.paper} target="_blank" rel="noreferrer">{text.readPaper} <Arrow /></a>}
+            </div>
           </article>
         ))}
       </div>
@@ -249,7 +252,7 @@ function Footer({ language }: { language: Language }) {
 }
 
 function AgentView() {
-  return <main className="agent-page"><div className="agent-heading"><span className="agent-tag">AGENT VIEW · v1</span><h1>GivenWhenLab</h1><p>{lab.description}</p></div><div className="agent-block"><h2>Scope</h2><p>{lab.scope}</p><p>{lab.focus.join(' · ')}</p></div><div className="agent-block"><h2>Publications</h2><a href="/data/publications.json">Structured publication index ↗</a><p><strong>{publication.title}</strong><br />{publication.authors.join(' · ')}<br />{publication.venue} · <a href={publication.doi}>DOI</a> · <a href={publication.dataset}>Dataset</a></p></div><div className="agent-block"><h2>Projects &amp; datasets</h2><a href="/data/projects.json">Structured project index ↗</a>{projects.map((project) => <p key={project.name}><strong>{project.name}</strong> — {project.description}<br /><a href={project.url}>{project.url}</a></p>)}</div><div className="agent-block"><h2>Machine-readable resources</h2><p><a href="/llms.txt">llms.txt</a> · <a href="/llms-full.txt">llms-full.txt</a> · <a href="/data/lab.json">lab.json</a> · <a href="/data/publications.json">publications.json</a> · <a href="/data/projects.json">projects.json</a></p><p className="muted">These files make the lab easier for agents to read. They do not promise universal discovery or compatibility.</p></div></main>
+  return <main className="agent-page"><div className="agent-heading"><span className="agent-tag">AGENT VIEW · v1</span><h1>GivenWhenLab</h1><p>{lab.description}</p></div><div className="agent-block"><h2>Scope</h2><p>{lab.scope}</p><p>{lab.focus.join(' · ')}</p></div><div className="agent-block"><h2>Publications</h2><a href="/data/publications.json">Structured publication index ↗</a><p><strong>{publication.title}</strong><br />{publication.authors.join(' · ')}<br />{publication.venue} · <a href={publication.pdf}>Paper</a> · <a href={publication.doi}>DOI</a> · <a href={publication.dataset}>Dataset</a></p></div><div className="agent-block"><h2>Projects &amp; datasets</h2><a href="/data/projects.json">Structured project index ↗</a>{projects.map((project) => <p key={project.name}><strong>{project.name}</strong> — {project.description}<br /><a href={project.url}>{project.url}</a>{project.paper && <> · <a href={project.paper}>Paper</a></>}</p>)}</div><div className="agent-block"><h2>Machine-readable resources</h2><p><a href="/llms.txt">llms.txt</a> · <a href="/llms-full.txt">llms-full.txt</a> · <a href="/data/lab.json">lab.json</a> · <a href="/data/publications.json">publications.json</a> · <a href="/data/projects.json">projects.json</a></p><p className="muted">These files make the lab easier for agents to read. They do not promise universal discovery or compatibility.</p></div></main>
 }
 
 function MpcPage({ kind }: { kind: 'mcp' | 'agents' }) {

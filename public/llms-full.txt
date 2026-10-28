@@ -10,7 +10,7 @@ Focus: Readable specifications; Reliable automation; Developer tooling; Experime
 - GivenWhenThen: A Dataset of BDD Test Scenarios Mined from Open Source Projects
   Authors: Luciano Belo de Alcântara Júnior; João Eduardo Montandon
   Venue: 23rd International Conference on Mining Software Repositories (MSR '26)
-  Paper: https://aserg.labsoft.dcc.ufmg.br/assets/papers/2026-msr-gwt.pdf
+  Paper: https://dl.acm.org/doi/pdf/10.1145/3793302.3793308
   DOI: https://doi.org/10.1145/3793302.3793308
   Dataset: https://doi.org/10.5281/zenodo.17517696
 

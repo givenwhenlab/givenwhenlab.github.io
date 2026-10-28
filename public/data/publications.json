@@ -10,7 +10,7 @@
     "year": 2026,
     "venue": "23rd International Conference on Mining Software Repositories (MSR '26)",
     "doi": "https://doi.org/10.1145/3793302.3793308",
-    "pdf": "https://aserg.labsoft.dcc.ufmg.br/assets/papers/2026-msr-gwt.pdf",
+    "pdf": "https://dl.acm.org/doi/pdf/10.1145/3793302.3793308",
     "dataset": "https://doi.org/10.5281/zenodo.17517696",
     "bibtex": "@inproceedings{J_nior_2026,\n  series = {MSR '26},\n  title = {GivenWhenThen: A Dataset of BDD Test Scenarios Mined from Open Source Projects},\n  url = {https://doi.org/10.1145/3793302.3793308},\n  doi = {10.1145/3793302.3793308},\n  booktitle = {Proceedings of the 23rd International Conference on Mining Software Repositories},\n  publisher = {ACM},\n  author = {Júnior, Luciano Belo de Alcântara and Montandon, João Eduardo},\n  year = {2026},\n  month = apr,\n  pages = {595--599},\n  collection = {MSR '26}\n}",
     "facts": {
