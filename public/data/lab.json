@@ -1,0 +1,22 @@
+{
+  "name": "GivenWhenLab",
+  "description": "An open-source lab exploring behavior-driven development, test automation, and the research behind better software tests.",
+  "scope": "GivenWhenLab connects research and practice in Behavior-Driven Development, Gherkin, automated testing, empirical software engineering, developer tools, and experiments with AI applied to software testing.",
+  "focus": [
+    "Readable specifications",
+    "Reliable automation",
+    "Developer tooling",
+    "Experiments and research"
+  ],
+  "disclaimer": "Independent open-source initiative. Not affiliated with or endorsed by the Cucumber project.",
+  "github": "https://github.com/givenwhenlab",
+  "repository": "https://github.com/givenwhenlab/givenwhenlab.github.io",
+  "website": "https://givenwhenlab.github.io/",
+  "resources": [
+    "/llms.txt",
+    "/llms-full.txt",
+    "/data/lab.json",
+    "/data/publications.json",
+    "/data/projects.json"
+  ]
+}

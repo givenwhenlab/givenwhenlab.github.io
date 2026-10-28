@@ -1,0 +1,9 @@
+[
+  {
+    "name": "GivenWhenThen dataset",
+    "type": "Dataset",
+    "description": "A collection of 2,289 complete BDD test scenarios mined from 1,720 real-world open-source projects.",
+    "url": "https://doi.org/10.5281/zenodo.17517696",
+    "status": "available"
+  }
+]

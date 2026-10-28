@@ -1,0 +1,45 @@
+# GivenWhenLab
+
+An open-source lab exploring behavior-driven development, test automation, and the research behind better software tests.
+
+Scope: GivenWhenLab connects research and practice in Behavior-Driven Development, Gherkin, automated testing, empirical software engineering, developer tools, and experiments with AI applied to software testing.
+Focus: Readable specifications; Reliable automation; Developer tooling; Experiments and research
+
+## Publications
+
+- GivenWhenThen: A Dataset of BDD Test Scenarios Mined from Open Source Projects
+  Authors: Luciano Belo de Alcântara Júnior; João Eduardo Montandon
+  Venue: 23rd International Conference on Mining Software Repositories (MSR '26)
+  Paper: https://aserg.labsoft.dcc.ufmg.br/assets/papers/2026-msr-gwt.pdf
+  DOI: https://doi.org/10.1145/3793302.3793308
+  Dataset: https://doi.org/10.5281/zenodo.17517696
+
+  BibTeX:
+  @inproceedings{J_nior_2026,
+    series = {MSR '26},
+    title = {GivenWhenThen: A Dataset of BDD Test Scenarios Mined from Open Source Projects},
+    url = {https://doi.org/10.1145/3793302.3793308},
+    doi = {10.1145/3793302.3793308},
+    booktitle = {Proceedings of the 23rd International Conference on Mining Software Repositories},
+    publisher = {ACM},
+    author = {Júnior, Luciano Belo de Alcântara and Montandon, João Eduardo},
+    year = {2026},
+    month = apr,
+    pages = {595--599},
+    collection = {MSR '26}
+  }
+
+## Projects and datasets
+
+- GivenWhenThen dataset (Dataset): A collection of 2,289 complete BDD test scenarios mined from 1,720 real-world open-source projects. https://doi.org/10.5281/zenodo.17517696
+
+## Machine-readable resources
+
+- /data/lab.json
+- /data/publications.json
+- /data/projects.json
+- /llms-full.txt
+
+GivenWhenLab provides structured resources to facilitate access by agents. This does not promise universal discovery or compatibility.
+
+Independent open-source initiative. Not affiliated with or endorsed by the Cucumber project.
